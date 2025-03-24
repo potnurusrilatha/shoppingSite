@@ -1,0 +1,24 @@
+Header component:
+    Desktop:
+        logo component
+            image
+        Navigation component
+            Array of links ---> coming from data.js file
+            NavItem component
+
+        Search component /nice to have
+            Icon
+        Cart component
+            icon  
+
+    Mobile:
+        MobileNavigation component
+             Menu Icon 
+                state to show menu
+
+     Array of links ---> coming from data.js file
+            NavItem component
+
+     Logo component
+     Search component
+     cart component

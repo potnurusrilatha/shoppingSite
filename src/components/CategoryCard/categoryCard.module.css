@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=UnifrakturMaguntia&display=swap');
+
+.categoryContainer{
+    /* padding: 16px; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+.categoryimage {
+    /* background-size: cover; */
+    flex: 1 0 0;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-image: url('../../assets/category-1.jpg');
+    /* padding: 30px; */
+  
+}
+
+.categorytext{
+    text-align: center;
+    /* max-width: 800px; */
+    margin-bottom: 5px;
+}
+
+.categorytext h1 {
+    text-align: center;
+    font-family: "Cookie", cursive;
+    font-size: 70px;
+    font-weight: lighter;
+    font-weight: 400;
+   
+}
+
+.categorytext p {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #666666;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 15 0;
+}
+
+.categorytext a {
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    padding: 0 0 3px;
+    display: inline-block;
+   
+}
+/* 
+a{
+    text-decoration: none;
+    background-color: transparent;
+} */
+
+.categorytext a ::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #ca1515;
+    content: "";
+}
+
+
+.categorytext a:hover::after {
+    transform: scale(1);
+
+}
