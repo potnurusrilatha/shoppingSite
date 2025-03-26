@@ -1,9 +1,10 @@
 import Header from './components/Header'
-import { categoryInfo } from './data'
 import CategoryTile from './components/CategoryTile'
 import styles from './components/CategoryTile/category-tile.module.css'
-function App() {
+import { categoryInfo, newProducts } from './data.js'
+import Product from './components/Product'
 
+function App() {
   return (
     <>
       <Header />
@@ -12,6 +13,13 @@ function App() {
           <CategoryTile key={index} {...item} />)
         )}
       </div>
+      <div>
+        <h3>NewProducts</h3>
+        
+        {newProducts.map((item, index) => <Product item={item} key={index} />)} 
+      
+      </div>
+
     </>
   )
 }
