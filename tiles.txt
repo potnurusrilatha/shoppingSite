@@ -1,0 +1,30 @@
+Categories Names:
+   Hardcode an Array ✔
+   Dynamically create an Array ✔
+
+Number of Products:
+    Filter array of products ✔
+    array.length ✔
+
+Data we want:
+    Name of the Categories ✔
+    Number of products in the category ✔
+
+CategoryTile =(name, numberofproducts)
+    Name
+        ternary /if/else - fashion
+        use the name as a class
+        add / remove 's based on if /else
+    Number of Products ✔
+    Shop Now ✔
+
+FeaturedCategoryTile =(name)
+    Name    
+        ternary /if/else - fashion
+        use the name as a class
+        add / remove 's based on if /else
+   
+    Shop Now
+
+Styling
+   Grid 2 rows / 3 columns

@@ -1,5 +1,5 @@
 import styles from '../navigation.module.css'
-import {pages } from '../../../menu.js';
+import { pages } from '../../../data';
 import { DotsThreeCircle } from "@phosphor-icons/react";
 import NavigationItem from '../NavigationItem';
 import { useState } from 'react';
@@ -15,7 +15,7 @@ const MobileNavigation = () => {
         <div className={styles.mobileMenu}>
             <DotsThreeCircle size={32} onClick={handleClick} />
             <div className={`${styles.mobileMenuContent} ${styles[showMenu]}`}>
-                {pages?.map((item, index) => <NavigationItem key={index} name={item} />)}
+                {pages.map((item, index) => <NavigationItem key={index} name={item} />)}
             </div>
         </div>
     )

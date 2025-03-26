@@ -1,13 +1,17 @@
-import Header from "./components/Header"
-import CategoryCard from './components/CategoryCard'
-
+import Header from './components/Header'
+import { categoryInfo } from './data'
+import CategoryTile from './components/CategoryTile'
+import styles from './components/CategoryTile/category-tile.module.css'
 function App() {
-
 
   return (
     <>
       <Header />
-      <CategoryCard />
+      <div className={styles.categoryTileContainer}>
+        {categoryInfo && categoryInfo.map((item, index) => (
+          <CategoryTile key={index} {...item} />)
+        )}
+      </div>
     </>
   )
 }
