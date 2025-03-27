@@ -1,24 +1,22 @@
-import Header from './components/Header'
-import CategoryTile from './components/CategoryTile'
-import styles from './components/CategoryTile/category-tile.module.css'
-import { categoryInfo, newProducts } from './data.js'
-import Product from './components/Product'
+import Layout from './pages/Layout'
+
+import { Routes, Route} from 'react-router-dom'
+import Home from './pages/Home'
+ import About from './pages/About'
+
 
 function App() {
   return (
     <>
-      <Header />
-      <div className={styles.categoryTileContainer}>
-        {categoryInfo && categoryInfo.map((item, index) => (
-          <CategoryTile key={index} {...item} />)
-        )}
-      </div>
-      <div>
-        <h3>NewProducts</h3>
-        
-        {newProducts.map((item, index) => <Product item={item} key={index} />)} 
+      <Routes>
+        <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About title="Hello "/>} />
+        </Route>
+      </Routes>
+     
+     
       
-      </div>
 
     </>
   )

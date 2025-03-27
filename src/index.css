@@ -18,3 +18,23 @@ body {
   height: 100vh;
 }
  
+main {
+  flex-grow: 1;
+  text-align: center;
+  padding: 12px;
+}
+
+.new-products {
+  display: flex;
+  flex-wrap: wrap ;
+  gap: 16px;
+  justify-content: space-evenly;
+  margin: auto;
+  max-width: 1160px;
+  width: 75%;
+
+}
+
+.new-products__title {
+  flex: 0 0 100%;
+}
