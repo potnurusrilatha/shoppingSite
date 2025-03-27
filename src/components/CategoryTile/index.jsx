@@ -7,7 +7,7 @@ const CategoryTile = ({ name, productNumber, featured = false }) => {
     }
 
     return (
-        <div className={`${styles.category} ${styles[classToUse()]} ` + (featured ? styles.featured : '')}>
+        <div className={`${styles.category} ${styles[classToUse()]} ` + (featured ? styles.featured : " ")}>
             <h2 className={styles.title}>
                 {name === "women" | name === "men" | name === "kid" ? `${name}'s fashion` : name}
             </h2>

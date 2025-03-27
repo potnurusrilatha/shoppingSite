@@ -1,4 +1,4 @@
-export const pages = ["Home", "Women's", "men", "Kid's", "Blog", "Contact"]
+export const pages = ["Home", "Women", "Men", "Kid", "Blog", "Contact"]
 
 
 export const imageUrls=["lipstick.jpeg", "shoe.jpeg", "shirt.jpeg", "tshirt.jpeg", "jacket.jpeg"]

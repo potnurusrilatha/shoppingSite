@@ -37,21 +37,21 @@
 }
 
 .women {
-    background-image: url('../../assets/women.jpeg');
+    background-image: url('../../assets/category-1.jpeg');
 }
 
 .men {
-    background-image: url('../../assets/men.jpeg');
+    background-image: url('../../assets/category-2.jpeg');
 }
 
 .kid {
-    background-image: url('../../assets/kid.jpeg');
+    background-image: url('../../assets/category-3.jpeg');
 }
 
 .accessories {
-    background-image: url('../../assets/accessories.jpeg');
+    background-image: url('../../assets/category-4.jpeg');
 }
 
 .cosmetics {
-    background-image: url('../../assets/cosmetics.jpeg');
+    background-image: url('../../assets/category-5.jpeg');
 }
