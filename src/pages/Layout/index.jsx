@@ -5,7 +5,9 @@ const Layout = () => {
   return (
     <>
     <Header />
-    <Outlet />
+    <Outlet /> 
+    
+    {/* it will change based on what router path is in the browser */}
     
     </>
         

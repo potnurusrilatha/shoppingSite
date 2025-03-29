@@ -1,0 +1,9 @@
+.pageTitle {
+
+}
+
+.productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+}

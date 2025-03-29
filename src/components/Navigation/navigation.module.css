@@ -3,9 +3,11 @@
 }
 
 .menuItem { 
+    color: inherit;
     cursor: pointer;
     font-weight: 500;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .menuItem::after {
@@ -29,7 +31,7 @@
     top: 100%;
     height: calc(100vh - 100%);
     width: 100vw;
-    background-color: cadetblue;
+    background-color: #fff;
     transition: left linear .3s;
 }
 

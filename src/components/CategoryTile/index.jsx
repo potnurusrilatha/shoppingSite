@@ -17,7 +17,7 @@ const CategoryTile = ({ name, productNumber, featured = false }) => {
                     : `${productNumber} items`
                 }
             </div>
-            <div className={styles.shopLink}>Shop Now</div>
+            <div className={styles.shopLink}><span>Shop Now</span></div>
         </div>
     )
 }

@@ -1,0 +1,20 @@
+Create Routes:
+    Women
+    Men
+    Kids
+    Accessories
+    Cosmetics
+
+    App.jsx
+
+Components
+    Women:
+        title "Women"
+        products - womens products
+                 - get WomenProducts -  array filter all products by categoru === womens
+    Men:
+        title: "Men"
+        products - mens producs - array filter all products by category === men
+    Kid:
+        title: "Kid"
+        products - mens producs - array filter all products by category === kids

@@ -446,10 +446,14 @@ export const categoryInfo = categoryNames.map(item => (
     }
 ))
 
-console.log(categoryInfo)
-// export const womenProducts = getProductsFromCategory("women").length
-// export const mensProducts = getProductsFromCategory("men").length
-// export const kidsProducts = getProductsFromCategory("kid").length
-// export const accessoriesProducts = getProductsFromCategory("accessories").length
-// export const cosmeticsProducts = getProductsFromCategory("cosmetics").length
+export const getProductsFromCategory = (categoryToFind) => {
+    return products.filter(item => item.category === categoryToFind)
+}
+
+// console.log(categoryInfo)
+export const womenProducts = getProductsFromCategory("women").length
+export const mensProducts = getProductsFromCategory("men").length
+export const kidsProducts = getProductsFromCategory("kid").length
+export const accessoriesProducts = getProductsFromCategory("accessories").length
+export const cosmeticsProducts = getProductsFromCategory("cosmetics").length
 
