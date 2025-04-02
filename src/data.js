@@ -449,7 +449,6 @@ export const categoryInfo = categoryNames.map(item => (
 export const getProductsFromCategory = (categoryToFind) => {
     return products.filter(item => item.category === categoryToFind)
 }
-
 // console.log(categoryInfo)
 export const womenProducts = getProductsFromCategory("women").length
 export const mensProducts = getProductsFromCategory("men").length

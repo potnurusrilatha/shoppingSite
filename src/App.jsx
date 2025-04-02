@@ -13,9 +13,13 @@ function App() {
         <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About title="Hello "/>} />
-        <Route path="/women" element={<ProductPage title="Hello women "/>} />
-        <Route path="/men" element={<ProductPage title="Hello men "/>} />
-        <Route path="/kid" element={<ProductPage title="Hello kid "/>} />
+
+
+        <Route path="/women" element={<ProductPage key="women" title="women"  />}/>
+        <Route path="/men" element={<ProductPage  key="men" title="men" />} />
+        <Route path="/kid" element={<ProductPage key="kid" title="kid" />}/>
+        <Route path="/accessories" element={<ProductPage key="accessories" title="accessories"  />}/>
+        <Route path="/cosmetics" element={<ProductPage key="cosmetics" title="cosmetics"  />}/>
         </Route>
       </Routes>
      

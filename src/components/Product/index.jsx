@@ -1,11 +1,12 @@
 
 import { getImageUrl } from '../../utils/function'
-import styles from './Product.module.css'
+import styles from './product.module.css'
 import { getRandomImage } from '../../data'
 
-const Product = (item) => {
+const Product = ({item}) => {
+  
   return (
-    <div className={styles.Product}>
+    <div className={styles.product}>
         <img className={styles.productImage} src={getImageUrl(getRandomImage())} />
       <h4 className={styles.productName}>{item.name}</h4>
       <p className={styles.productPrice}>{item.price}</p>

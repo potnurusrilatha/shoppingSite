@@ -1,0 +1,4 @@
+Product Component:
+    Button -> OnClick = add product to State
+App Component 
+    State = [Products] 
