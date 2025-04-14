@@ -1,10 +1,10 @@
 import Header from '../../components/Header'
 import { Outlet } from 'react-router-dom'
 
-const Layout = () => {
+const Layout = ({cartItems}) => {
   return (
     <>
-    <Header />
+    <Header productsInCart={cartItems}/>
     <Outlet /> 
     
     {/* it will change based on what router path is in the browser */}

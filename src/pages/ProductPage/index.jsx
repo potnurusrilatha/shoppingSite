@@ -4,7 +4,7 @@ import styles from './productPage.module.css'
 import { getProductsFromCategory } from '../../data'
 
 
-const ProductPage = ({ title }) => {
+const ProductPage = ({ title, addproduct }) => {
     const[categoryProducts, setCategoryProducts] = useState(null)
 
 
@@ -19,7 +19,7 @@ const ProductPage = ({ title }) => {
             {title}
         </h1>
         <div className={styles.productsContainer}>
-            {categoryProducts && categoryProducts.map((item, index) =>  <Product key={index} item={item} />)}      
+            {categoryProducts && categoryProducts.map((item, index) =>  <Product key={index} item={item} buyItem={addproduct}/>)}  
         </div>
         </>  
     )

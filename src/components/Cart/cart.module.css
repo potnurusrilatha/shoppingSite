@@ -1,0 +1,9 @@
+.cartContent {
+    background-color: rgb(238, 222, 237);
+    min-height: 400px;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    
+}

@@ -4,11 +4,10 @@ import DesktopNavigation from '../Navigation/DesktopNavigation'
 import MobileNavigation from '../Navigation/MobileNavigation'
 import Search from '../Search'
 import Cart from '../Cart'
-// import { pages } from '../../data'
 
 
 
-const Header = () => {
+const Header = ({ productsInCart}) => {
   return (
     <header className={styles.header}>
       <MobileNavigation />
@@ -17,7 +16,8 @@ const Header = () => {
          {/* <div>{pages.map((item)=> <p>{item}</p>)}</div> */}
         <div className={styles.iconContainer}>
           <Search />
-          <Cart />
+          <Cart  cartItems={productsInCart}/>
+          {productsInCart.length !== 0 && <span>{productsInCart.length}</span>}
         </div>
       
     </header>
